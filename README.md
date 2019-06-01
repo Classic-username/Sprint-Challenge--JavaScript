@@ -33,13 +33,46 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+The forEach() method executes a provided function once for each array element.
+The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+Straight from the MDN website. In my own words, forEach() allows you to run a function on a specific element in an array, ex: console.log(element). One of my new favorite functions: map() makes a new array with the function you ran on the element in an array, ex: let newArray = [console.log(element)]
+
 2. What is the difference between a function and a method?
+
+A function and a method are both functions, but methods are functions in an object. I called the roar method on the t_rex object.
 
 3. What is closure?
 
+Closure is essentially a chain of access within functions. 
+ex:
+let var = 'I am in global scope'
+let function = access(){
+    let anotherVar = 'I am in function scope';
+
+    let deepAccess = function(){
+        let yetAnotherVar = 'I am in the function's function scope';
+        return anotherVar + 'and' + yetAnotherVar;
+        this function can access var, anotherVar, and yetAnotherVar;
+    };
+
+    return(var);
+    this function can access var and anotherVar, but NOT yetAnotherVar;
+    
+}
+
+no function written outside of that function can access variables inside that function either.
+
+
 4. Describe the four rules of the 'this' keyword.
 
+Rule 1, Window or Global object binding. If you say 'this' in a function without use strict, 'this' becomes window.
+Rule 2, Implicit binding. When you call 'this.something' , you bind 'this' to 'something'.
+Rule 3, Explicit binding. When we use .call(), .apply() or .bind(), this is explicitly bound to the argument within the ().
+Rule 4, New binding. When creating a constructor function or a class constructor, we go inside the constructor and set 'this.whatever' all throughout. We then say new Object, passing in our parameters, which are then passed into the 'this.whatever'.
+
 5. Why do we need super() in an extended class?
+
+Super() passes all new attributes up to the constructor of the parent function, so all the attributes we make on the extended class also have access to the parent class attributes.
 
 ## Project Set up
 
@@ -71,7 +104,6 @@ Your finished project must include all of the following requirements:
 Test your knowledge of objects and arrays. 
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
-##### GO BACK AND WORK ON this because REQUEST 3 WITH "Uni" ISN'T COMPLETE
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
