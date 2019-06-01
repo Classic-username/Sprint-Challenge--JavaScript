@@ -1,3 +1,6 @@
+DON'T FORGET TO ANSWER THESE QUESTIONS
+
+
 # Sprint Challenge: JavaScript Fundamentals
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
@@ -67,6 +70,8 @@ Your finished project must include all of the following requirements:
 ## Task 1: Objects and Arrays
 Test your knowledge of objects and arrays. 
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
+
+##### GO BACK AND WORK ON this because REQUEST 3 WITH "Uni" ISN'T COMPLETE
 
 ## Task 2: Functions
 This challenge takes a look at callbacks and closures as well as scope. 
